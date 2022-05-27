@@ -33,7 +33,8 @@ def autoresponse(update: Update, context: CallbackContext):
     text = autoresponse_text
     )
 
-autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & ~Filters.user(707448824), autoresponse)
+bot_id = <insert bot id from Telegram>
+autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & ~Filters.user(bot_id), autoresponse)
 dispatcher.add_handler(autoresponse_handler)
 
 #http://python-telegram-bot.readthedocs.io/en/latest/telegram.ext.messagehandler.html
