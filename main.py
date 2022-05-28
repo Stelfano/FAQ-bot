@@ -1,11 +1,14 @@
 #first we define the essential: updater and dispatcher
 
 from telegram.ext import Updater
-updater = Updater(token  = '<INSERIRE TOKEN DEL BOT (vedi BotFather)>', use_context = True)
+updater = Updater(token  = '<INSERIRE TOKEN DEL BOT (vedi BotFather)>',
+        use_context = True)
+
 dispatcher = updater.dispatcher
 
 import logging
-logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s', level = logging.INFO)
+logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level = logging.INFO)
 
 #defining the introductory function
 from telegram import Update
@@ -34,7 +37,9 @@ def autoresponse(update: Update, context: CallbackContext):
     )
 
 bot_id = <insert bot id from Telegram>
-autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & ~Filters.user(bot_id), autoresponse)
+autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & ~Filters.user(bot_id),
+        autoresponse)
+
 dispatcher.add_handler(autoresponse_handler)
 
 #http://python-telegram-bot.readthedocs.io/en/latest/telegram.ext.messagehandler.html
