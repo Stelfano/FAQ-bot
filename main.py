@@ -1,23 +1,19 @@
-#first we define the essential: updater and dispatcher
-
-from telegram.ext import Updater
-updater = Updater(token  = '<INSERIRE TOKEN DEL BOT (vedi BotFather)>',
-        use_context = True)
-
-dispatcher = updater.dispatcher
-
 import logging
-logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        level = logging.INFO)
-
-#defining the introductory function
+import random
+from telegram import ParseMode
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
-from telegram import ParseMode
+from telegram.ext import Updater
 
-import random
+#first we define the essential: updater and dispatcher
+updater = Updater(token  = '<INSERIRE TOKEN DEL BOT (vedi BotFather)>',
+        use_context = True)
+dispatcher = updater.dispatcher
+
+logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level = logging.INFO)
 
 #check whether this works just fine here or you got to move it lower the start function
 updater.start_polling()
@@ -36,8 +32,8 @@ def autoresponse(update: Update, context: CallbackContext):
     text = autoresponse_text
     )
 
-bot_id = <insert bot id from Telegram>
-autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & ~Filters.user(bot_id),
+bot_id = wizzothewizard
+autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & Filters.user(bot_id),
         autoresponse)
 
 dispatcher.add_handler(autoresponse_handler)
