@@ -10,8 +10,8 @@ my_token = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
 updater = Updater(token=my_token)
 dispatcher = updater.dispatcher
 
-format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-logging.basicConfig(format=format, level=logging.INFO)
+FORMAT_STRING = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(format=FORMAT_STRING, level=logging.INFO)
 
 
 def string_polish(string: str) -> list:
@@ -19,7 +19,12 @@ def string_polish(string: str) -> list:
 
 
 def echo(update: Update, context: CallbackContext) -> None:
-    best_match_value = matched_line = line_counter = rate = 0
+    '''
+    best_match_rate keeps the best rate of similarity between strings
+    matched_line contains the line number with best match
+    line_counter is just a simple counter used to keep the line number
+    '''
+    best_match_rate = matched_line = line_counter = 0
     '''
     The following line formats the message recieved in such a way that it can be compared to the keyword in our file (SequenceMatcher is Case-Sensitive)
     The recieved line is cleaned of spaces, and ?, every word is then brought to lowercase
@@ -36,13 +41,13 @@ def echo(update: Update, context: CallbackContext) -> None:
             #SequenceMatcher returns a double that signifies the degree of similarity of two strings
             rate = difflib.SequenceMatcher(None, message, line.rstrip().split(" ")).ratio()
             #Finds best potential match ratio and line number
-            if rate > best_match_value :
-                best_match_value = rate
+            if rate > best_match_rate :
+                best_match_rate = rate
                 matched_line = line_counter
 
     #Using a treshold to make sure there is a potential match
     #If ratio is sufficient recovers the line with best match
-    if rate > 0.5: 
+    if best_match_rate > 0.5: 
         final_mess = linecache.getline("corrispondence.txt", matched_line)
         context.bot.send_message(chat_id=update.effective_chat.id, text=final_mess)
 
