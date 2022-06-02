@@ -1,16 +1,21 @@
+from telegram import ParseMode
 from telegram import Update
-from telegram.ext import CallbackContext, MessageHandler, Filters, Updater
+from telegram.ext import CallbackContext
+from telegram.ext import CommandHandler
+from telegram.ext import Filters
+from telegram.ext import MessageHandler
+from telegram.ext import Updater
 import difflib
 import linecache
 import logging
 import re
+import random
 
-
-my_token = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
-updater = Updater(token=my_token)
-dispatcher = updater.dispatcher
-
+#Token and bot id
+MY_TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+BOT_ID = wizzothewizard
 FORMAT_STRING = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
 logging.basicConfig(format=FORMAT_STRING, level=logging.INFO)
 
 
@@ -18,7 +23,7 @@ def string_polish(string: str) -> list:
     return sorted(string.strip("?").lower().split(" "))
 
 
-def echo(update: Update, context: CallbackContext) -> None:
+def matcher(question: str) -> str:
     '''
     best_match_rate keeps the best rate of similarity between strings
     matched_line contains the line number with best match
@@ -31,7 +36,7 @@ def echo(update: Update, context: CallbackContext) -> None:
     Message also has to be ordered for sequenceMatcher to work properly since it looks at the LCS inside a string
     See function string_polish for details
     '''
-    message = string_polish(update.message.text)
+    message = string_polish(question)
     with open("keywords.txt") as keyword_file:
         recoveredlist = keyword_file.readlines()
 
@@ -49,10 +54,31 @@ def echo(update: Update, context: CallbackContext) -> None:
     #If ratio is sufficient recovers the line with best match
     if best_match_rate > 0.5: 
         final_mess = linecache.getline("corrispondence.txt", matched_line)
-        context.bot.send_message(chat_id=update.effective_chat.id, text=final_mess)
+        return final_mess
 
 
-echo_handler = MessageHandler(Filters.regex(r".*\?+.*"), echo)
-dispatcher.add_handler(echo_handler)
 
+
+#First we define the essential: updater and dispatcher
+updater = Updater(token = MY_TOKEN, use_context = True)
+
+#This function is capable of reading the messages in the chat and subsequently answer them recalling the function "echo()"
+#NOTE: it only identifies messages which:
+#do not come from the bot;
+#are not commands;
+#have in their string the "?" character.
+
+def autoresponse(update: Update, context: CallbackContext):
+    context.bot.send_message(chat_id = update.effective_chat.id,
+    reply_to_message_id = message.message_id,
+    text = matcher(update.message.text)
+    )
+
+    
+autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & Filters.user(BOT_ID),
+        autoresponse)
+
+dispatcher = updater.dispatcher
+dispatcher.add_handler(autoresponse_handler)
+#Check whether this works just fine here or you got to move it lower the start function
 updater.start_polling()

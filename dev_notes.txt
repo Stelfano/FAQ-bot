@@ -1,0 +1,40 @@
+the bot must be capable of answering messages sending documents, video, animation or URLs
+of what is being discussed in the comments.
+A case which should be common is the following:
+
+>Spot: "Quand'è l'appello di prog 2?"
+#The message has been sent by Spotted DMI: FAQ should read Spotted and give the object
+
+>Comment: "Ma invece quand'è quello di Analisi 1?"
+#Realistically, none is going to ask that kind of questions in the comments, nevertheless it could be implemented anyway.
+
+Summing up:
+    The bot should be able to read its own messages and answer by replying to its own post. [implying Filter.user()]
+
+What should be sent?
+
+    Document (PDF) containing the informations;
+    Message with the URL.
+
+Potential FAQ:
+    > Appello X;
+    # URL redirecting to exams' calendar (temporal? like, if you're sending the message in a span of time of the 1st session it shows the 1st session and so on)
+
+    > Lezione X (data, orario, etc)
+    # send classes
+
+    > "Ma devo fare questa cosa X di materia Y?"
+    # send syllabus of the given subject
+
+
+DUMPSTER:
+
+#Appelli
+sessione_01 = http://web.dmi.unict.it/corsi/l-31/esami
+sessione_02 = http://web.dmi.unict.it/corsi/l-31/esami?sessione=2&aa=122
+sessione_03 = http://web.dmi.unict.it/corsi/l-31/esami?sessione=3&aa=122
+sessione_04 = http://web.dmi.unict.it/corsi/l-31/esami?sessione=4&aa=122
+
+#Lezione
+lezione_01 = http://web.dmi.unict.it/corsi/l-31/orario-lezioni?semestre=1&aa=122
+lezione_02 = http://web.dmi.unict.it/corsi/l-31/orario-lezioni?semestre=2&aa=122
