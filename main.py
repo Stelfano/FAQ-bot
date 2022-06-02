@@ -70,7 +70,7 @@ updater = Updater(token = MY_TOKEN, use_context = True)
 
 def autoresponse(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id = update.effective_chat.id,
-    reply_to_message_id = message.message_id,
+    reply_to_message_id = update.message_id,
     text = matcher(update.message.text)
     )
 
