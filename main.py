@@ -13,7 +13,7 @@ import random
 
 #Token and bot id
 MY_TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
-BOT_ID = wizzothewizard
+BOT_ID = 'wizzothewizard'
 FORMAT_STRING = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
 logging.basicConfig(format=FORMAT_STRING, level=logging.INFO)
