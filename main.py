@@ -12,8 +12,8 @@ import re
 import random
 
 #Token and bot id
-MY_TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
-BOT_ID = 'wizzothewizard'
+MY_TOKEN = '5518198923:AAEl48PgQvBo175x-nws4SNFO7Xu6-bgY6s'
+BOT_ID = '5518198923'
 FORMAT_STRING = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
 logging.basicConfig(format=FORMAT_STRING, level=logging.INFO)
@@ -70,15 +70,15 @@ updater = Updater(token = MY_TOKEN, use_context = True)
 
 def autoresponse(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id = update.effective_chat.id,
-    reply_to_message_id = update.message_id,
+    reply_to_message_id = update.message.message_id,
     text = matcher(update.message.text)
     )
-
-    
-autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command & Filters.user(BOT_ID),
+ 
+autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*") & ~Filters.command,
         autoresponse)
+
 
 dispatcher = updater.dispatcher
 dispatcher.add_handler(autoresponse_handler)
-#Check whether this works just fine here or you got to move it lower the start function
+
 updater.start_polling()
