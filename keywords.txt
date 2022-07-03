@@ -1,5 +1,107 @@
-appello
-algoritmi appello prima sessione
-algoritmi appello seconda sessione
-appello database prima sessione
-appello database seconda sessione
+appelli
+
+#PRIMO ANNO
+
+appello Algebra lineare e Geometria prima sessione
+appello Algebra lineare e Geometria seconda sessione
+appello Algebra lineare e Geometria terza sessione
+
+appello Strutture Discrete prima sessione
+appello Strutture Discrete seconda sessione
+appello Strutture Discrete terza sessione
+
+appello Programmazione 1 prima sessione
+appello Programmazione 1 seconda sessione
+appello Programmazione 1 terza sessione
+
+appello Architettura degli Elaboratori prima sessione
+appello Architettura degli Elaboratori seconda sessione
+appello Architettura degli Elaboratori terza sessione
+
+appello Fondamenti di Informatica prima sessione
+appello Fondamenti di Informatica seconda sessione
+appello Fondamenti di Informatica terza sessione
+
+appello Elementi di Analisi Matematica 1 prima sessione
+appello Elementi di Analisi Matematica 1 seconda sessione
+appello Elementi di Analisi Matematica 1 terza sessione
+
+appello Programmazione 2 prima sessione
+appello Programmazione 2 seconda sessione
+appello Programmazione 2 terza sessione
+
+appello Ulteriori conoscenze linguistiche prima sessione
+appello Ulteriori conoscenze linguistiche seconda sessione
+appello Ulteriori conoscenze linguistiche terza sessione
+
+#SECONDO ANNO
+
+appello Algoritmi e Laboratorio prima sessione
+appello Algoritmi e Laboratorio seconda sessione
+appello Algoritmi e Laboratorio terza sessione
+
+appello Basi di Dati prima sessione
+appello Basi di Dati seconda sessione
+appello Basi di Dati terza sessione
+
+appello Elementi di Analisi Matematica 2 prima sessione
+appello Elementi di Analisi Matematica 2 seconda sessione
+appello Elementi di Analisi Matematica 2 terza sessione
+
+appello Interazione e Multimedia prima sessione
+appello Interazione e Multimedia seconda sessione
+appello Interazione e Multimedia terza sessione
+
+appello Ingegneria del Software prima sessione
+appello Ingegneria del Software seconda sessione
+appello Ingegneria del Software terza sessione
+
+appello Reti di Calcolatori prima sessione
+appello Reti di Calcolatori seconda sessione
+appello Reti di Calcolatori terza sessione
+
+appello Sistemi Operativi prima sessione
+appello Sistemi Operativi seconda sessione
+appello Sistemi Operativi terza sessione
+
+#TERZO ANNO
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
+
+appello x prima sessione
+appello x seconda sessione
+appello x terza sessione
