@@ -66,42 +66,78 @@ appello Sistemi Operativi terza sessione
 
 #TERZO ANNO
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Fisica prima sessione
+appello Fisica seconda sessione
+appello Fisica terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Metodi Matematici e Statistici prima sessione
+appello Metodi Matematici e Statistici seconda sessione
+appello Metodi Matematici e Statistici terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Audio Processing prima sessione
+appello Audio Processing seconda sessione
+appello Audio Processing terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Computer Grafica prima sessione
+appello Computer Grafica seconda sessione
+appello Computer Grafica terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Digital Forensics prima sessione
+appello Digital Forensics seconda sessione
+appello Digital Forensics terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Introduzione al Data Mining prima sessione
+appello Introduzione al Data Mining seconda sessione
+appello Introduzione al Data Mining terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello IT LAW prima sessione
+appello IT LAW seconda sessione
+appello IT LAW terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Laboratorio di Sistemi a Microcontrollore prima sessione
+appello Laboratorio di Sistemi a Microcontrollore seconda sessione
+appello Laboratorio di Sistemi a Microcontrollore terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Programmazione Parallela su Architetture GPU prima sessione
+appello Programmazione Parallela su Architetture GPU seconda sessione
+appello Programmazione Parallela su Architetture GPU terza sessione
 
-appello x prima sessione
-appello x seconda sessione
-appello x terza sessione
+appello Social Media Managment prima sessione
+appello Social Media Managment seconda sessione
+appello Social Media Managment terza sessione
+
+appello Startup di Impresa e Modelli di Business prima sessione
+appello Startup di Impresa e Modelli di Business seconda sessione
+appello Startup di Impresa e Modelli di Business terza sessione
+
+appello Calcolo Numerico prima sessione
+appello Calcolo Numerico seconda sessione
+appello Calcolo Numerico terza sessione
+
+appello Internet Security prima sessione
+appello Internet Security seconda sessione
+appello Internet Security terza sessione
+
+appello Programmazione Mobile prima sessione
+appello Programmazione Mobile seconda sessione
+appello Programmazione Mobile terza sessione
+
+appello Sistemi Centrali prima sessione
+appello Sistemi Centrali seconda sessione
+appello Sistemi Centrali terza sessione
+
+appello Sviluppo di Giochi Digitali prima sessione
+appello Sviluppo di Giochi Digitali seconda sessione
+appello Sviluppo di Giochi Digitali terza sessione
+
+appello Technologies for Advanced Programming prima sessione
+appello Technologies for Advanced Programming seconda sessione
+appello Technologies for Advanced Programming terza sessione
+
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio prima sessione
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio seconda sessione
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio terza sessione
+
+appello Web Programming, Design & Usability prima sessione
+appello Web Programming, Design & Usability seconda sessione
+appello Web Programming, Design & Usability terza sessione
