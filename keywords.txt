@@ -1,8 +1,143 @@
-appello algoritmi
-appello algoritmi e laboratorio
-appello algebra lineare
-appello introduzione al data mining
-appello data mining
-appello social
-appello social media
-appello social media managment
+appelli
+
+#PRIMO ANNO
+
+appello Algebra lineare e Geometria prima sessione
+appello Algebra lineare e Geometria seconda sessione
+appello Algebra lineare e Geometria terza sessione
+
+appello Strutture Discrete prima sessione
+appello Strutture Discrete seconda sessione
+appello Strutture Discrete terza sessione
+
+appello Programmazione 1 prima sessione
+appello Programmazione 1 seconda sessione
+appello Programmazione 1 terza sessione
+
+appello Architettura degli Elaboratori prima sessione
+appello Architettura degli Elaboratori seconda sessione
+appello Architettura degli Elaboratori terza sessione
+
+appello Fondamenti di Informatica prima sessione
+appello Fondamenti di Informatica seconda sessione
+appello Fondamenti di Informatica terza sessione
+
+appello Elementi di Analisi Matematica 1 prima sessione
+appello Elementi di Analisi Matematica 1 seconda sessione
+appello Elementi di Analisi Matematica 1 terza sessione
+
+appello Programmazione 2 prima sessione
+appello Programmazione 2 seconda sessione
+appello Programmazione 2 terza sessione
+
+appello Ulteriori conoscenze linguistiche prima sessione
+appello Ulteriori conoscenze linguistiche seconda sessione
+appello Ulteriori conoscenze linguistiche terza sessione
+
+#SECONDO ANNO
+
+appello Algoritmi e Laboratorio prima sessione
+appello Algoritmi e Laboratorio seconda sessione
+appello Algoritmi e Laboratorio terza sessione
+
+appello Basi di Dati prima sessione
+appello Basi di Dati seconda sessione
+appello Basi di Dati terza sessione
+
+appello Elementi di Analisi Matematica 2 prima sessione
+appello Elementi di Analisi Matematica 2 seconda sessione
+appello Elementi di Analisi Matematica 2 terza sessione
+
+appello Interazione e Multimedia prima sessione
+appello Interazione e Multimedia seconda sessione
+appello Interazione e Multimedia terza sessione
+
+appello Ingegneria del Software prima sessione
+appello Ingegneria del Software seconda sessione
+appello Ingegneria del Software terza sessione
+
+appello Reti di Calcolatori prima sessione
+appello Reti di Calcolatori seconda sessione
+appello Reti di Calcolatori terza sessione
+
+appello Sistemi Operativi prima sessione
+appello Sistemi Operativi seconda sessione
+appello Sistemi Operativi terza sessione
+
+#TERZO ANNO
+
+appello Fisica prima sessione
+appello Fisica seconda sessione
+appello Fisica terza sessione
+
+appello Metodi Matematici e Statistici prima sessione
+appello Metodi Matematici e Statistici seconda sessione
+appello Metodi Matematici e Statistici terza sessione
+
+appello Audio Processing prima sessione
+appello Audio Processing seconda sessione
+appello Audio Processing terza sessione
+
+appello Computer Grafica prima sessione
+appello Computer Grafica seconda sessione
+appello Computer Grafica terza sessione
+
+appello Digital Forensics prima sessione
+appello Digital Forensics seconda sessione
+appello Digital Forensics terza sessione
+
+appello Introduzione al Data Mining prima sessione
+appello Introduzione al Data Mining seconda sessione
+appello Introduzione al Data Mining terza sessione
+
+appello IT LAW prima sessione
+appello IT LAW seconda sessione
+appello IT LAW terza sessione
+
+appello Laboratorio di Sistemi a Microcontrollore prima sessione
+appello Laboratorio di Sistemi a Microcontrollore seconda sessione
+appello Laboratorio di Sistemi a Microcontrollore terza sessione
+
+appello Programmazione Parallela su Architetture GPU prima sessione
+appello Programmazione Parallela su Architetture GPU seconda sessione
+appello Programmazione Parallela su Architetture GPU terza sessione
+
+appello Social Media Managment prima sessione
+appello Social Media Managment seconda sessione
+appello Social Media Managment terza sessione
+
+appello Startup di Impresa e Modelli di Business prima sessione
+appello Startup di Impresa e Modelli di Business seconda sessione
+appello Startup di Impresa e Modelli di Business terza sessione
+
+appello Calcolo Numerico prima sessione
+appello Calcolo Numerico seconda sessione
+appello Calcolo Numerico terza sessione
+
+appello Internet Security prima sessione
+appello Internet Security seconda sessione
+appello Internet Security terza sessione
+
+appello Programmazione Mobile prima sessione
+appello Programmazione Mobile seconda sessione
+appello Programmazione Mobile terza sessione
+
+appello Sistemi Centrali prima sessione
+appello Sistemi Centrali seconda sessione
+appello Sistemi Centrali terza sessione
+
+appello Sviluppo di Giochi Digitali prima sessione
+appello Sviluppo di Giochi Digitali seconda sessione
+appello Sviluppo di Giochi Digitali terza sessione
+
+appello Technologies for Advanced Programming prima sessione
+appello Technologies for Advanced Programming seconda sessione
+appello Technologies for Advanced Programming terza sessione
+
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio prima sessione
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio seconda sessione
+appello Tecnologie per Sistemi Distribuiti e il Web con Laboratorio terza sessione
+
+appello Web Programming, Design & Usability prima sessione
+appello Web Programming, Design & Usability seconda sessione
+appello Web Programming, Design & Usability terza sessione
