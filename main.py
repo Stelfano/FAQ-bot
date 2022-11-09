@@ -46,6 +46,9 @@ def matcher(question: str) -> str:
         int_len = set(filtered_question).intersection(set(tokenized_answer))
         int_len = len(int_len)
 
+        if int_len == 0:
+            continue
+
 # We compute jaccard distance and custom distance
         cust_sim = int_len/len(filtered_question)
         jaccard_dist = 1 - len(set(filtered_question))/int_len
@@ -58,7 +61,7 @@ def matcher(question: str) -> str:
             best_match_line = i
 
     if best_match_line != 0:
-        print(lc.getline("corrispondence.txt", best_match_line))
+        return lc.getline("corrispondence.txt", best_match_line)
 
 
 # First we define the essential: updater and dispatcher
