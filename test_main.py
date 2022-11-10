@@ -1,18 +1,10 @@
-from telegram import Update
-from telegram.ext import CallbackContext
-from telegram.ext import Filters
-from telegram.ext import MessageHandler
-from telegram.ext import Updater
+#THIS FILE CONTAINS A COPY OF THE FUNCTION IMPLEMENTED IN main.py FILE
+#IF YOU WISH TO ESPAND / FIX MATCHER, PLEASE NOTE THAT THIS FILE HERE
+#NEEDS TO BE CHANGED TOO
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
 import linecache as lc
-
-MY_TOKEN = '5518198923:AAEl48PgQvBo175x-nws4SNFO7Xu6-bgY6s'
-BOT_ID = '5518198923'
-FORMAT_STRING = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-
-# logging.basicConfig(format=FORMAT_STRING, level=logging.INFO)
 
 
 def matcher(question: str) -> str:
@@ -63,30 +55,7 @@ def matcher(question: str) -> str:
     if best_match_line != 0:
         return lc.getline("corrispondence.txt", best_match_line)
 
-
-# First we define the essential: updater and dispatcher
-updater = Updater(token=MY_TOKEN, use_context=True)
-
-# This function is capable of reading the messages in the chat and
-# subsequently answer them recalling the function "echo()"
-# NOTE: it only identifies messages which:
-# do not come from the bot;
-# are not commands;
-# have in their string the "?" character.
-
-
-def autoresponse(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id,
-                             reply_to_message_id=update.message.message_id,
-                             text=matcher(update.message.text)
-                             )
-
-
-autoresponse_handler = MessageHandler(Filters.regex(r".*\?+.*")
-                                      & ~Filters.command, autoresponse)
-
-
-dispatcher = updater.dispatcher
-dispatcher.add_handler(autoresponse_handler)
-
-updater.start_polling()
+def test_matcher():
+    assert matcher("appello algoritmi?")
+    assert matcher("appello interazione e multimedia?")
+    assert matcher("appello data mining?")
